@@ -19,15 +19,20 @@
         <p>1 atelier par mois, souvent le dernier jeudi après midi du mois</p>      
       </div>
       <div class="ateliers_section2_photo col-lg-4 col-md-4 hidden-sm hidden-xs">
-          <img class="img-coaching" src="./images/ateliers_test1.jpg" alt="Atelier en groupe à Saint Piat">
+          <img class="img-coaching" src="<?php bloginfo('template_directory'); ?>/images/ateliers_test1.jpg" alt="Atelier en groupe à Saint Piat">
       </div>
     </div>
 
     <div class="row ateliers_section3_planning">
       <h2><u>Planning des prochains ateliers :</u></h2>
-      <hr>
-      <p>26 Avril 2016 : Lorem ipsum dolor sit amet.</p>
-      <p>14 Mai 2016 : Neque porro quisquam est qui dolorem ipsum.</p>
+      <div id="atelier_content">
+        <?php query_posts('category_name=Planning-ateliers&showposts=2'); ?>
+        <?php if(have_posts()) : ?>
+          <?php while(have_posts()) : the_post(); ?> 
+            <?php the_content(); ?> 
+          <?php endwhile; ?> 
+        <?php endif; ?> 
+      </div>
 
     </div>
     

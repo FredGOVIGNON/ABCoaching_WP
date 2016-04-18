@@ -1,5 +1,5 @@
 /*
-Theme Name: Annie Bearez Coaching
+Theme Name: Annie Bearez Coaching WP
 Theme URI: ...
 Author: 3 élèves de la Wild Code School Chartres promo 1
 Author URI: ...
@@ -258,15 +258,15 @@ nav li{
 .index_section4_blog {
 	position: relative;
 	padding: 30px;
-	color:#FFFFFF;
-	background-color:#1BBC9B;
-	min-height:350px;
+	color: #FFFFFF;
+	background-color: #1BBC9B;
+	min-height: 350px;
 }
 
 .index_section4_blog .citation{
-	font-size:35px;
-	font-style:italic;
-	padding-top:20px; 
+	font-size: 35px;
+	font-style: italic;
+	padding-top: 20px; 
 }
 
 .index_section4_blog .blog1{
@@ -330,7 +330,7 @@ nav li{
 
 /* Ateliers - Section3 */
 .ateliers_section3_planning{
-	background: url("../images/1460552595_common-calendar-month-glyph.png") no-repeat;
+	background: url("./images/1460552595_common-calendar-month-glyph.png") no-repeat;
 	background-size: 60px auto;
   background-position: 80px 50px;
 	margin: 0 125px 25px 125px;
@@ -362,7 +362,7 @@ nav li{
 .blog_section1_photo{
    width:100%;
    height:15em;
-   background: url("../images/flower.jpg") no-repeat center center;
+   background: url("./images/flower.jpg") no-repeat center center;
    -webkit-background-size:cover;
        moz-background-size:cover;
          o-background-size:cover;
@@ -453,7 +453,7 @@ nav li{
 .contact_section1_photo{
 	width: 100%;
   height: 15em;
-  background: url("../images/picjumbo.com_P1010617.jpg") no-repeat center center;
+  background: url("./images/picjumbo.com_P1010617.jpg") no-repeat center center;
 	margin: 0;
 	-webkit-background-size:cover;
 		moz-background-size:cover;
@@ -553,7 +553,7 @@ nav li{
 	width: 100%;
 	height: 15em;
 	color: #19B5FE;
-	background: url("../images/photo_liens.jpg") no-repeat center center;
+	background: url("./images/photo_liens.jpg") no-repeat center center;
 	-webkit-background-size:cover;
 		moz-background-size:cover;
 		  o-background-size:cover;
@@ -630,7 +630,7 @@ nav li{
 	width:100%;
 	height:15em;
 	color:#19B5FE;
-	background: url("../images/stones-801756_1920.jpg") no-repeat center center;
+	background: url("./images/stones-801756_1920.jpg") no-repeat center center;
 	-webkit-background-size:cover;
 		moz-background-size:cover;
 		  o-background-size:cover;
@@ -659,7 +659,7 @@ nav li{
 	width:100%;
 	height:15em;
 	color:#19B5FE;
-	background: url("../images/stones-167089original.jpg") no-repeat center center;
+	background: url("./images/stones-801756_1920.jpg") no-repeat center center;
 	-webkit-background-size:cover;
 		moz-background-size:cover;
 		o-background-size:cover;
@@ -699,7 +699,7 @@ nav li{
 	width: 100%;
 	height: 15em;
 	color: #19B5FE;
-	background: url("../images/2015-09-14-roman-003.jpg") no-repeat center center;
+	background: url("./images/2015-09-14-roman-003.jpg") no-repeat center center;
 	-webkit-background-size:cover;
 		moz-background-size:cover;
 		  o-background-size:cover;

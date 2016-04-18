@@ -82,28 +82,27 @@
 
 <div class="row index_section4_blog">
   <div class="citation col-lg-offset-1 col-lg-3 col-md-offset-1 col-md-3 col-sm-offset-1 col-sm-10 col-sm-offset-1 col-xs-offset-1 col-xs-10 col-xs-offset-1">
-    <?php query_posts('category_name=Citations&&showposts=1'); ?>
-    <?php if(have_posts()) : ?>
-      <?php while(have_posts()) : the_post(); ?>
-        <div class="post_content"> 
-          <?php the_content(); ?>
-        </div> 
-      <?php endwhile; ?> 
-    <?php endif; ?> 
+    <div id="citation_content">
+      <?php $my_query = new WP_Query('category_name=Citations&showposts=1&orderby=rand');
+      while ($my_query->have_posts()) : $my_query->the_post();
+      $do_not_duplicate = $post->ID; ?>
+        <?php the_content(); ?>
+      <?php endwhile; ?>
+    </div>
   </div>
   <div class="blog1 col-lg-offset-1 col-lg-6 col-lg-offset-1 col-md-offset-1 col-md-6 col-md-offset-1 col-sm-offset-1 col-sm-10 col-sm-offset-1 col-xs-offset-1 col-xs-10 col-xs-offset-1">
     <div class="c-frame-tl"></div>
     <div class="c-frame-tr"></div>
     <div class="c-frame-br"></div>
     <div class="c-frame-bl"></div>
-    <div id="content">
+    <div id="blog1_content">
       <?php query_posts('category_name=Billets&&showposts=2'); ?>
       <?php if(have_posts()) : ?>
         <?php while(have_posts()) : the_post(); ?> 
           <div class="post" id="post-<?php the_ID(); ?>"> 
             <h2><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2> 
             <p class="postmetadata">   <?php the_time('j F Y') ?> par <?php the_author() ?> | Cat&eacute;gorie: <?php the_category(', ') ?> | <?php comments_popup_link('Pas de commentaires', '1 Commentaire', '% Commentaires'); ?></p>
-            <div class="post_content"> 
+            <div class="post1_content"> 
               <?php the_excerpt(); ?> 
               <!-- <a href="<?php echo get_permalink(); ?>"> Lire la suite ...</a> -->
             </div> 
