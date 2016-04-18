@@ -40,9 +40,6 @@
             'theme_location' => 'menu-gauche1',
             'menu_class' => 'nav navbar-nav'));
           ?>
-        </ul>
-
-        <ul class="nav navbar-nav">
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Mes prestations <span class="caret"></span></a>
             <?php wp_nav_menu( array(
@@ -52,9 +49,6 @@
               ));
             ?>
           </li>
-        </ul>
-
-        <ul class="nav navbar-nav">
           <?php wp_nav_menu( array(
             'container' => false,
             'theme_location' => 'menu-gauche2',
