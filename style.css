@@ -1,0 +1,751 @@
+/*
+Theme Name: Annie Bearez Coaching
+Theme URI: ...
+Author: 3 élèves de la Wild Code School Chartres promo 1
+Author URI: ...
+Description: Ce thème a été créé pour le site internet de Mme Annie Bearez, psychothérapeute et coach certifié. Il se définit par un design sobre et épuré, s'apparentant au flat design. Les différentes pages du site présentent l'expérience et l'activité de Mme Annie Bearez. Une partie blog est également présente afin qu'elle puisse rédiger des billets lisibles par les internautes.
+Version: 1.0
+License: ...
+License URI: ...
+Tags: ...
+Text Domain: Annie Bearez Coaching
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+/*
+ * Table of Contents
+ *
+ * 1.0 - Body
+ * 2.0 - Header
+ * 3.0 - Footer
+ * 4.0 - Page principale
+ * 5.0 - Ateliers
+ * 6.0 - Blog
+ * 7.0 - Coaching
+ * 8.0 - Contact
+ * 9.0 - Formation
+ * 10.0 - Liens
+ * 11.0 - Mentions légales
+ * 12.0 - Plan du site
+ * 13.0 - Qui-suis-je
+ * 14.0 - Références
+ * 15.0 - Témoignages
+ */
+
+/*-------------------------------------------------*/
+
+/*1.0 - Body*/
+
+
+body {
+	font-family: 'PT+Sans',Arial,sans-serif;
+	overflow-x: hidden;
+	background-color: #f8f8f8;
+}
+
+/*-------------------------------------------------*/
+
+/* 2.0 - Header */
+
+.navbar{
+	margin-bottom: 0px;
+	font-family: 'PT+Sans',Arial,sans-serif;
+}
+
+nav li{
+	padding: 0 18px 0 0;
+}
+
+.nautile{
+	height: 170%;
+	margin-left: -5px;
+	margin-top: -7px;
+}
+
+.linked_in img{
+	height: 20px;
+}
+
+.container-fluid > .navbar-collapse{
+	max-height: 475px;
+}
+
+@media screen and (max-width: 1040px){
+	.nav > li {
+		padding: 0 1px 0 0;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.container-fluid > .navbar-collapse li{
+		margin-left: 15px;
+	}
+}
+
+/*-------------------------------------------------*/
+
+/* 3.0 - Footer */
+
+.footer {
+  background-color: #bdbdbd;
+  padding: 15px 25px 8px 25px;
+  color: black;
+  font-family: 'PT+Sans',Arial,sans-serif;
+}
+
+.footer_left {
+  text-align: left;
+}
+
+.footer_middle img {
+  width:2em;
+  margin-left: 15px;
+  margin-bottom: 1px;
+}
+
+.footer_right {
+  text-align: right;
+}
+
+.footer_right .liens a {
+  text-decoration: none;
+  font-color: black;
+}
+
+@media screen and (max-width: 800px){
+  .footer {
+    font-size: 10px;
+  }
+  .footer_left {
+    text-align: center;
+  }
+  .footer_middle {
+    text-align: center;
+    padding: 5px 0 5px 0;
+  }
+  .footer_right {
+    text-align: center;
+  }
+  .footer_middle img{
+    margin-left: 0;
+  }
+}
+
+/*-------------------------------------------------*/
+
+/*4.0 - Page principale*/
+
+/* Page principale - Section1 */
+.index_section1{
+	height: 750px;
+	position: relative;
+}
+
+.index_section1_photo{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	background: url("./images/green-692079_ABC1.jpg") no-repeat center center fixed;
+	-webkit-background-size:cover;
+		moz-background-size:cover;
+		  o-background-size:cover;
+			background-size:cover;	
+}
+
+.index_section1_texte{
+	font-size: 220%;
+}
+
+.index_section1_texte div{
+	position:absolute;
+	background: rgba(27, 188, 155, 0.4);
+  padding:10px;
+}
+
+.index_section1_texte a:hover{
+	text-decoration: none;
+}
+
+.index_section1_texte #Apprendre{
+	margin-top: 170px;
+}
+
+.index_section1_texte #Accompagner{
+	margin-top: 270px;
+}
+
+.index_section1_texte #Developper{
+	margin-top: 370px;
+}
+
+/* Page principale - Section2 */
+
+.index_section2_presentation{
+	background-color: #1BBC9B;
+	color: #FFFFFF;
+}
+
+.index_section2_presentation .bloc_photo{
+	height: 450px;
+}
+
+.index_section2_presentation .bloc_photo .presentation_photo{
+	height: 100%;
+	background: url("../images/photo2annie.png") no-repeat;
+	background-size: 400px auto;
+  background-position: 50% 100%;
+  border-bottom: 1px solid black;
+}
+
+.index_section2_presentation .presentation_biographie{
+	padding: 35px 30px 0 0;
+	margin-left: -20px;
+}
+
+.index_section2_presentation .presentation_biographie p{
+	font-size: 16px;
+}
+
+.index_section2_presentation .presentation_biographie h1{
+	font-size: 16px;
+}
+
+@media screen and (max-width: 992px) {
+	.index_section2_presentation .presentation_biographie{
+		padding-bottom: 20px;
+		margin-left: 45px;
+	}
+}
+
+/* Page principale - Section3 */
+
+.index_section3_activites{
+	position: relative;
+  color: black;
+  text-align: center;
+  font-size: 17px;
+	padding-top: 50px;
+	padding-bottom: 70px;
+	min-height: 350px;
+	background-color: #f8f8f8;
+}
+
+.index_section3_activites .accroche{
+	padding-bottom: 40px;
+	font-size: 24px;
+}
+
+@media screen and (max-width: 992px) {
+	.index_section3_activites .formation_photo {
+  	height: 70%;
+	}
+	.index_section3_activites .coaching_photo {
+  	margin-top: 40px;
+	}
+	.index_section3_activites .atelier_photo {
+  	margin-top: 40px;
+	}
+}
+
+/* Page principale - Section4 */
+
+.index_section4_blog {
+	position: relative;
+	padding: 30px;
+	color:#FFFFFF;
+	background-color:#1BBC9B;
+	min-height:350px;
+}
+
+.index_section4_blog .citation{
+	font-size:35px;
+	font-style:italic;
+	padding-top:20px; 
+}
+
+.index_section4_blog .blog1{
+	font-size:15px;
+}
+
+.index_section4_blog .blog1 .c-frame-tl {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width:10px;
+  height:10px;
+  border-width: 3px;
+  border-style: solid none none solid;
+  border-color: #FFFFFF;
+}
+
+.index_section4_blog .blog1 .c-frame-br {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  width:10px;
+  height:10px;
+  border-width: 3px;
+  border-style: none solid solid none;
+  border-color: #FFFFFF;
+}
+
+@media screen and (max-width: 1000px) {
+	.index_section4_blog .citation{
+		padding-top: 20px;
+		padding-bottom: 50px; 
+	}
+}
+
+/*-------------------------------------------------*/
+
+/*5.0 - Ateliers*/
+
+/* Ateliers - Section1 */
+.ateliers_section1_texte{
+	margin-top: 100px;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.ateliers_section1_texte h1{
+	font-weight: 600;
+}
+
+/* Ateliers - Section2 */
+.ateliers_section2_photo {
+	height: 100%;
+	padding-left: 30px;
+}
+
+.ateliers_section2_photo img{
+	width: 90%;
+	padding-top: 190px;
+}
+
+/* Ateliers - Section3 */
+.ateliers_section3_planning{
+	background: url("../images/1460552595_common-calendar-month-glyph.png") no-repeat;
+	background-size: 60px auto;
+  background-position: 80px 50px;
+	margin: 0 125px 25px 125px;
+	border: 2px solid black;
+	text-align: center;
+	padding-bottom: 20px;
+}
+.ateliers_section3_planning h2{
+	font-size: 30px;
+}
+
+@media screen and (max-width: 1040px) {
+	.ateliers_section3_planning{
+		background-position: 10px 50px;
+	}
+}
+
+@media screen and (max-width: 860px) {
+	.ateliers_section3_planning{
+		background: none;
+	}
+}
+
+/*-------------------------------------------------*/
+
+/*6.0 - Blog*/
+
+/* Blog - Section1 photo */
+.blog_section1_photo{
+   width:100%;
+   height:15em;
+   background: url("../images/flower.jpg") no-repeat center center;
+   -webkit-background-size:cover;
+       moz-background-size:cover;
+         o-background-size:cover;
+           background-size:cover;
+}
+
+/* Blog - Section2 post */
+.blog_section2_post{
+  margin: 20px 10px 35px 10px;
+}
+
+.blog_section2_post #content{
+  padding:10px;
+  margin-top:10px;
+}
+
+.blog_section2_post .blog_article{
+	box-shadow: 10px 10px 5px 0px #656565;
+	-moz-box-shadow: 10px 10px 5px 0px #656565;
+	-webkit-box-shadow: 10px 10px 5px 0px #656565;
+	-o-box-shadow: 10px 10px 5px 0px #656565;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, Strength=5);
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+/* Blog - Section3 sidebar */
+.blog_section3_sidebar{
+  margin: 40px 10px 10px 50px;
+}
+
+.blog_section3_sidebar .bloc_sidebar{
+  width: auto;
+  margin: 5px;
+  border: 1px solid #656565;
+  border-radius: 10px;
+}
+
+.blog_section3_sidebar .bloc_sidebar ul>li{
+  list-style-type: circle;
+  color: #1BBC9B;
+}
+
+.blog_section3_sidebar h3{
+  color: #1BBC9B;
+}
+
+@media screen and (max-width: 993px){
+	.blog_section3_sidebar{
+  	margin: 20px 55px 20px 10px;
+	}
+}
+
+/*-------------------------------------------------*/
+
+/*7.0 - Coaching*/
+
+/* Coaching - Section1 */
+
+.coaching_section1_texte{
+	margin-top: 100px;
+  text-align: left;
+  margin-bottom: 100px;
+}
+
+.coaching_section1_texte h1{
+	font-weight: 600;
+}
+
+/* Coaching - Section2 */
+
+.coaching_section2_photo {
+	height: 100%;
+}
+
+.coaching_section2_photo img{
+	width: 100%;
+	padding-top: 180px;
+	-webkit-border-radius: 100px;
+}
+
+/*-------------------------------------------------*/
+
+/*8.0 - Contact*/
+
+/* Contact - Section1 */
+.contact_section1_photo{
+	width: 100%;
+  height: 15em;
+  background: url("../images/picjumbo.com_P1010617.jpg") no-repeat center center;
+	margin: 0;
+	-webkit-background-size:cover;
+		moz-background-size:cover;
+		  o-background-size:cover;
+			background-size:cover;
+}
+
+/* Contact - Section2 */
+.section2_contact{
+	padding: 60px 0 50px 0;
+	text-align: center;
+}
+
+.section2_contact{
+	font-size: 17px;
+}
+
+.section2_contact h1{
+	font-size: 33px;
+}
+
+/* Contact - Section3 */
+
+.section3_formulaire .formulaire{
+	padding-bottom: 50px;
+}
+
+/* Contact - Section 4 */
+
+.section4_sncf{
+  margin: 10px 0 35px 215px;
+}
+
+.section4_sncf img{
+	height: 40px;
+}
+
+.section4_sncf a{
+	margin-left: 5px;
+	font-size: 17px;
+}
+
+/* Contact - Section 5 Maps */
+
+.section5_maps{
+	position: relative;
+  	padding-bottom: 30%; // This is the aspect ratio
+  	height: 0;
+  	margin: 10px 200px 100px 200px;
+}
+
+.section5_maps iframe{
+	position: absolute;
+  	top: 0;
+  	bottom: 20px;
+  	left: 0;
+  	width: 100% !important;
+  	height: 100% !important;
+}
+
+/*-------------------------------------------------*/
+
+/*9.0 - Formation*/
+
+/* Formations - Section1 */
+
+.formations_section1_texte{
+	margin-top: 100px;
+  text-align: left;
+  margin-bottom: 100px;
+}
+
+.formations_section1_texte h1{
+	font-weight: 600;
+}
+
+/* Formations - Section2 */
+
+.formations_section2_photo {
+	height: 100%;
+}
+
+.formations_section2_photo img{
+	width: 100%;
+	padding-top: 350px;
+	padding-left: 25px;
+	-webkit-border-radius: 100px;
+}
+
+/*-------------------------------------------------*/
+
+/*10.0 - Liens*/
+
+/* Liens - Section1 */
+
+.liens_section1_photo{
+	width: 100%;
+	height: 15em;
+	color: #19B5FE;
+	background: url("../images/photo_liens.jpg") no-repeat center center;
+	-webkit-background-size:cover;
+		moz-background-size:cover;
+		  o-background-size:cover;
+			background-size:cover;
+}
+
+/* Liens - Section2 */
+
+.liens_section2{
+	margin-top: 80px;
+	margin-bottom: 110px;
+	text-align: center;
+}
+
+.liens_section2 .titre_page_liens{ 
+	font-size: 30px;
+}
+
+.liens_section2 .titre_page_liens{
+	font-size: 16px;
+}
+
+/*-------------------------------------------------*/
+
+/*11.0 - Mentions légales*/
+
+/* Mentions légales */
+
+.mentions_legales_titre{
+	text-align: center;
+	margin: 120px 50px 50px 50px;
+}
+
+.mentions_legales_texte{
+	margin: 20px 50px 120px 50px;
+}
+
+/*-------------------------------------------------*/
+
+/*12.0 - Plan du site*/
+
+/* Plan du site */
+
+.plan_site h2{
+	margin-top: 120px;
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+.plan_site ul{
+	margin-left: 60px;
+	margin-bottom: 70px;
+}
+
+.formations{
+	margin-left: 14px;
+}
+
+.coaching{
+	margin-left: 14px;
+}
+
+.ateliers{
+	margin-left: 14px;
+}
+
+/*-------------------------------------------------*/
+
+/*13.0 - Qui-suis-je*/
+
+/* QSJ - Section1 */
+
+.qui_suis_je_section1_photo{
+	width:100%;
+	height:15em;
+	color:#19B5FE;
+	background: url("../images/stones-801756_1920.jpg") no-repeat center center;
+	-webkit-background-size:cover;
+		moz-background-size:cover;
+		  o-background-size:cover;
+			background-size:cover;
+}
+
+/* QSJ - Section2 */
+
+.qui_suis_je_section2{
+	margin: 50px;
+	color:#black;
+}
+
+.qui_suis_je_section2 img{
+	padding-top: 100px;
+	padding-bottom: 30px;
+}
+
+/*-------------------------------------------------*/
+
+/*14.0 - Références*/
+
+/* References - section 1 */
+
+.references_section1_photo{
+	width:100%;
+	height:15em;
+	color:#19B5FE;
+	background: url("../images/stones-167089original.jpg") no-repeat center center;
+	-webkit-background-size:cover;
+		moz-background-size:cover;
+		o-background-size:cover;
+		background-size:cover;
+}
+
+/* References - section 2 */
+
+.references_section2{
+	margin-top: 80px;
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+.references_section2 h1{
+	font-size: 33px;
+}
+
+.references_section2 .liste_logos{
+	padding-top: 90px
+}
+
+.references_section2 img{
+	height: 80px;
+	padding: 5px;
+	margin: 0 50px 50px 50px;
+}
+
+
+/*-------------------------------------------------*/
+
+/*15.0 - Témoignages*/
+
+/* Temoignages - section1 */
+
+.temoignages_section1_photo{
+	width: 100%;
+	height: 15em;
+	color: #19B5FE;
+	background: url("../images/2015-09-14-roman-003.jpg") no-repeat center center;
+	-webkit-background-size:cover;
+		moz-background-size:cover;
+		  o-background-size:cover;
+			background-size:cover;
+}
+
+/* Temoignages - section2 */
+
+.temoignages_section2 form{
+	margin-top: 90px;
+	padding-bottom: 120px;
+} 
+
+.temoignages_section2 h1{
+	font-size: 33px;
+	margin-top: 80px;
+	text-align: center;
+}
+
+.temoignages_section2 .temoignages{
+	margin-top: 80px;
+	font-size: 20px;
+}
+
+.temoignages_section2 .img-quote-reverse{
+	position: absolute;
+	bottom: -40px; 
+	right: 10px;
+}
+
+.temoignages_section2 form > h2{
+	font-size: 24px;
+	margin-top: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+	.temoignages_section2{
+		margin: 20px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.temoignages_section2{
+		margin: 70px;
+	}
+}
+
+
+/*-------------------------------------------------
