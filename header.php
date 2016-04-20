@@ -7,6 +7,7 @@
 
   <script type ="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.js"></script>
   <script type ="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/contact-form.js"></script>
   <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
   <link type="text/css" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css">
   

@@ -33,6 +33,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * 13.0 - Qui-suis-je
  * 14.0 - Références
  * 15.0 - Témoignages
+ * 16.0 - Formulaire de contact (pages témoignages et contact)
  */
 
 /*-------------------------------------------------*/
@@ -462,56 +463,60 @@ nav li{
 }
 
 /* Contact - Section2 */
-.section2_contact{
+.row .contact_section2{
 	padding: 60px 0 50px 0;
+	font-size: 17px;
+	height: 800px;
+}
+
+.row .contact_section2 .contact{
 	text-align: center;
 }
 
-.section2_contact{
+.row .contact_section2 .contact h1{
+	font-size: 33px;
+}
+
+.row .contact_section2 .sncf img{
+	width: 40px;
+}
+
+.row .contact_section2 .sncf a{
+	margin-left: 5px;
 	font-size: 17px;
 }
 
-.section2_contact h1{
-	font-size: 33px;
+.row .contact_section2 .maps{
+	position: relative;
+  padding-bottom: 30%; // This is the aspect ratio
+}
+
+.row .contact_section2 .maps iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 200% !important;
 }
 
 /* Contact - Section3 */
 
 .section3_formulaire .formulaire{
-	padding-bottom: 50px;
+	padding: 60px 0 100px 0;
 }
 
-/* Contact - Section 4 */
 
-.section4_sncf{
-  margin: 10px 0 35px 215px;
-}
-
-.section4_sncf img{
-	height: 40px;
-}
-
-.section4_sncf a{
-	margin-left: 5px;
-	font-size: 17px;
-}
-
-/* Contact - Section 5 Maps */
-
-.section5_maps{
-	position: relative;
-  	padding-bottom: 30%; // This is the aspect ratio
-  	height: 0;
-  	margin: 10px 200px 100px 200px;
-}
-
-.section5_maps iframe{
-	position: absolute;
-  	top: 0;
-  	bottom: 20px;
-  	left: 0;
-  	width: 100% !important;
-  	height: 100% !important;
+@media screen and (max-width: 993px){
+	.sncf{
+		margin: 60px 60px 0px 60px;
+	}
+	.maps{
+  	margin: 60px 60px 60px 60px;
+	}
+	.section3_formulaire .formulaire{
+		padding-top: 250px;
+		margin: 60px 60px 0px 60px;
+	}
 }
 
 /*-------------------------------------------------*/
@@ -748,4 +753,67 @@ nav li{
 }
 
 
-/*-------------------------------------------------
+/*-------------------------------------------------*/
+
+/*16.0 - Formulaire de contact (pages témoignages et contact)*/
+
+/*.screenReader { left: -9999px; position: absolute; top: -9999px; }*/
+.thanks { background: #F2F3F6; border: 1px solid #7E8AA2; padding:10px; }
+
+/*****Forms*****/
+ol.forms { float: left; list-style: none; margin: 0; width: 100%; }
+ol.forms li { 
+	clear: both; 
+	float: left; 
+	margin-bottom: 18px; 
+	position: relative;
+	width: 100%;
+}
+ol.forms label {
+	cursor: pointer;
+	display: block;
+	float: left;
+	font-weight: bold;
+	padding-right: 20px;
+	width: 100px;
+}
+ol.forms input, ol.forms textarea {
+	border: 1px solid #7E8AA2;
+	border-radius: 3px;
+	font: inherit;
+	-moz-border-radius: 3px;
+	padding: 2px;
+	-webkit-border-radius: 3px;
+	width: 214px;
+}
+ol.forms textarea { height: 300px; width: 334px; }
+ol.forms input:focus, ol.forms textarea:focus { background-color: #f2f3f6; border-color: #ff9800; }
+.error { color: #f00; }
+ol.forms li .error { font-size: 12px; margin-left: 20px; }
+ol.forms li.textarea .error {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100px;
+}
+ol.forms li.screenReader { margin-bottom: 0; }
+ol.forms li.buttons button {
+	background: #ff9800;
+	border: none;
+	color: #000;
+	cursor: pointer;
+	font: 16px/16px "Avenir LT Std", Helvetica, Arial, sans-serif;
+	overflow: hidden;
+	padding: 6px 3px 3px 3px;
+	text-transform: uppercase;
+	width: auto;
+}
+ol.forms li.buttons button:hover { color: #222; }
+ol.forms li.buttons button:active { left: -1px; position: relative; top: -1px; }
+ol.forms li.buttons, ol.forms li.inline { float: right; width: 460px; }
+ol.forms li.inline input { width: auto; }
+ol.forms li.inline label { display: inline; float: none; width: auto; }
+
+
+/*-------------------------------------------------*/
