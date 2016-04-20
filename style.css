@@ -1,4 +1,4 @@
-/*
+
 Theme Name: Annie Bearez Coaching WP
 Theme URI: ...
 Author: 3 élèves de la Wild Code School Chartres promo 1
@@ -165,7 +165,7 @@ nav li{
 
 .index_section1_texte div{
 	position:absolute;
-	background: rgba(27, 188, 155, 0.4);
+	background: rgba(131,208,201,0.4);
   padding:10px;
 }
 
@@ -188,7 +188,7 @@ nav li{
 /* Page principale - Section2 */
 
 .index_section2_presentation{
-	background-color: #1BBC9B;
+	background-color: #83d0c9;
 	color: #FFFFFF;
 }
 
@@ -198,10 +198,10 @@ nav li{
 
 .index_section2_presentation .bloc_photo .presentation_photo{
 	height: 100%;
-	background: url("../images/photo2annie.png") no-repeat;
+	background: url("./images/photo2annie.png") no-repeat;
 	background-size: 400px auto;
   background-position: 50% 100%;
-  border-bottom: 1px solid black;
+  
 }
 
 .index_section2_presentation .presentation_biographie{
@@ -260,7 +260,7 @@ nav li{
 	position: relative;
 	padding: 30px;
 	color: #FFFFFF;
-	background-color: #1BBC9B;
+	background-color: #83d0c9;
 	min-height: 350px;
 }
 
@@ -644,15 +644,17 @@ nav li{
 
 /* QSJ - Section2 */
 
-.qui_suis_je_section2{
-	margin: 50px;
-	color:#black;
+/*.qui_suis_je_section2{
+	/*margin: 50px;*/
+	/*color:#black;
 }
 
 .qui_suis_je_section2 img{
 	padding-top: 100px;
 	padding-bottom: 30px;
-}
+	width: 30%;
+	height:30%; 
+}*/
 
 /*-------------------------------------------------*/
 
@@ -816,4 +818,4 @@ ol.forms li.inline input { width: auto; }
 ol.forms li.inline label { display: inline; float: none; width: auto; }
 
 
-/*-------------------------------------------------*/
+/*-------------------------------------------------

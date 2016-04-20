@@ -6,7 +6,7 @@
 ?>
 
 <?php get_header();?>
-   
+  
 <div class="row index_section1">
   <div class="index_section1_texte">    
     <div id="Apprendre">
@@ -19,30 +19,25 @@
     <a href="./ateliers.php">Développer</a>
     </div>
   </div>
-  <div class="index_section1_photo"></div>     
+  <div class="index_section1_photo">
+  </div>     
+<img src="<?php bloginfo('template_directory'); ?>/images/photo2annie.jpg" alt="" title="">
 </div>
 
 
 <div class="row index_section2_presentation">
 <div class="bloc_photo col-lg-6 col-md-6 hidden-sm hidden-xs">
   <div class="presentation_photo col-lg-10 col-md-10 col-sm-10 col-xs-10">
+    
   </div>
 </div>
 <div class="presentation_biographie col-lg-5 col-md-5 col-sm-offset-1 col-sm-10 col-xs-offset-1 col-xs-10">
-  <p>Comme vous sans doute, j’aime apprendre. Apprendre  aux autres – apprendre des autres.C’est un plaisir sans cesse renouvelé, c’est le sens de ma vie. D’où cette envie d’enseigner et de me tourner vers la formation.<br><br>
-  Mon expérience d’animation de groupe m’a conduite tout naturellement vers l’accompagnement individuel.<br><br>
-  Ma spécialité  ?  ce sont les jeunes :<br>
-   - Jeune embauché : prise de poste<br>
-   - Jeune maman (même à 40 ans), jeune papa<br>
-   - Jeune sénior : préparation à la retraite, sens de la vie<br>
-   - Jeune entrepreneur : construire un projet professionnel<br>
-   - Nouvelle identité : promotion, divorce, veuvage, ...<br><br>
-  Cette « conscience d’être soi » génère implicitement un mieux-être avec l’autre, ce qui améliore le relationnel, et atténue les conflits.<br><br>
-  Mes clients disent qu’ils apprécient ma bonne humeur et mon coté pragmatique.<br><br>
-  Je suis passionnée par la plongée sous marine et les longues courses à pieds, pour l’équilibre du corps, de la pensée, et des sensations.<br><br>
-  Et vous  : quel est votre hobby ,  votre bulle d’oxygène  ?<br><br>
-  à très vite.<br>
-  <h1>Annie Bearez</h1></p>
+  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+    <div>
+    <?php the_content(); ?>
+    </div>
+  <?php endwhile; ?>
+  <?php endif; ?>
 
 </div>
 </div>
@@ -96,7 +91,7 @@
     <div class="c-frame-br"></div>
     <div class="c-frame-bl"></div>
     <div id="blog1_content">
-      <?php query_posts('category_name=Billets&&showposts=2'); ?>
+      <?php query_posts('category_name=Articles&&showposts=2'); ?>
       <?php if(have_posts()) : ?>
         <?php while(have_posts()) : the_post(); ?> 
           <div class="post" id="post-<?php the_ID(); ?>"> 
