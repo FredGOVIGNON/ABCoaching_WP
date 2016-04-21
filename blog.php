@@ -17,7 +17,7 @@
         	<div id="content">
             <div class="blog_article col-lg-12 col-md-12">
               <div id="blog2_content">
-                <?php query_posts('category_name=Billets'); ?>
+                <?php query_posts('category_name=articles'); ?>
                 <?php if(have_posts()) : ?>
                   <?php while(have_posts()) : the_post(); ?> 
                     <div class="post" id="post-<?php the_ID(); ?>"> 
