@@ -505,8 +505,66 @@ nav li{
 
 /* Contact - Section3 */
 
-.section3_formulaire .formulaire{
-	padding: 60px 0 100px 0;
+.section3_formulaire .wpcf7-form-control{
+	display: block;
+	width: 100%;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.section3_formulaire .wpcf7-form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+
+.section3_formulaire .wpcf7-textarea{
+	height: 100%;
+}
+
+.section3_formulaire .wpcf7-submit{
+	float: right !important;
+	width: 100px;
+	color: #fff;
+	background-color: #337ab7;
+	border-color: #2e6da4;
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	margin-left: 15px;
+}
+
+.section3_formulaire .screen-reader-response {
+	display: none; 
 }
 
 
@@ -522,6 +580,7 @@ nav li{
 		margin: 60px 60px 0px 60px;
 	}
 }
+
 
 /*-------------------------------------------------*/
 
@@ -719,10 +778,66 @@ nav li{
 
 /* Temoignages - section2 */
 
-.temoignages_section2 form{
-	margin-top: 90px;
-	padding-bottom: 120px;
-} 
+.wpcf7-form-control{
+	display: block;
+	width: 100%;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.wpcf7-form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+
+.wpcf7-textarea{
+	height: 100%;
+}
+
+.wpcf7-submit{
+	float: right !important;
+	width: 100px;
+	color: #fff;
+	background-color: #337ab7;
+	border-color: #2e6da4;
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+
+.screen-reader-response {
+	display: none; 
+}
 
 .temoignages_section2 h1{
 	font-size: 33px;
@@ -757,7 +872,6 @@ nav li{
 		margin: 70px;
 	}
 }
-
 
 /*-------------------------------------------------*/
 

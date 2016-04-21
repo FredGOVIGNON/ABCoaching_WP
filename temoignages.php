@@ -26,12 +26,10 @@
       </div>
 
       <!--Formulaire-->
-      <form class="formulaire col-lg-offset-1 col-lg-4 col-md-offset-1 col-md-5 col-sm-12 col-xs-12">
-        <h2>Votre avis m'intéresse...</h2>
-
-        
-
-      </form>
+      <div class="formulaire col-lg-offset-1 col-lg-4 col-md-offset-1 col-md-5 col-sm-12 col-xs-12">
+          <h2>Votre avis m'intéresse...</h2>
+          <?php echo do_shortcode( '[contact-form-7 id="254" title="Formulaire de témoignages"]' ); ?>
+      </div>
       
     </div>
   </div>

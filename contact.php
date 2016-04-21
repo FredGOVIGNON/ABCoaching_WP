@@ -34,30 +34,10 @@
  
   <div class="section3_formulaire">
     <!--Formulaire-->
-    <form class="formulaire col-lg-offset-1 col-lg-4 col-lg-offset-1 col-md-offset-1 col-md-4 col-md-offset-1 col-sm-10 col-xs-10">
+    <div class="formulaire col-lg-offset-1 col-lg-4 col-lg-offset-1 col-md-offset-1 col-md-4 col-md-offset-1 col-sm-10 col-xs-10">
       <h3>Formulaire de contact</h3>
-      <div class="form-group">
-        <label for="Input_nom"></label>
-        <input type="text" class="form-control" id="Input_nom" placeholder="Nom, prénom">
-      </div>
-      <div class="form-group">
-        <label for="Input_email"></label>
-        <input type="email" class="form-control" id="Input_email" placeholder="Email">
-      </div>
-      <fieldset class="form-group">
-        <label for="Input_telephone"></label>
-        <input type="text" class="form-control" id="Input_telephone" placeholder="Téléphone">
-      </fieldset>
-      <fieldset class="form-group">
-        <label for="Input_sujet"></label>
-        <input type="text" class="form-control" id="Input_sujet" placeholder="Sujet">
-      </fieldset>
-      <fieldset class="form-group">
-        <label for="Input_texte"></label>
-        <textarea class="form-control" id="Input_texte" rows="3" placeholder="Mon message"></textarea>
-      </fieldset>
-      <button type="submit" class="btn btn-primary pull-right">Envoyer</button>
-    </form>
+			<?php echo do_shortcode( '[contact-form-7 id="256" title="Formulaire de contact"]' ); ?>
+    </div>
   </div>
 </div>
 
