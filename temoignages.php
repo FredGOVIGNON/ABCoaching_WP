@@ -11,24 +11,25 @@
   </div>
 
   <div class="temoignages_section2">
-    <div class="row">
-      <h1><u>Témoignages</u></h1>
+    <h1><u>Témoignages</u></h1>
+    <div class="ecart row">
+      
       <div class="temoignages col-lg-offset-1 col-lg-5 col-lg-offset-1 col-md-offset-1 col-md-5 col-md-offset-1 col-sm-12 col-xs-12">
-        <img src="images/1460407704_quote.png" class="img-quote">
-        <p><strong>Corinne (lundi 14 mai 2012)</strong></p>
-        <p><em>« J'ai connu Annie dans ma formation de plongeuse. Vu mon niveau maintenant, ce fut une belle réussite. Aussi, c'est sans peine que j'imagine cette belle personne en coach ! Vous avez fait le bon choix. »</em></p>
-        <br>
-        <p><strong>Sabine (vendredi 11 mai 2012)</strong></p>
-        <p><em>« Annie a une capacité d'écoute exemplaire, sans parler de sa personnalité discrète mais perspicace, sa gentillesse, son professionnalisme...
-        Concernant son savoir-faire et ses compétences, je compte bien les tester mais je n'ai aucun doute. »</em>
-        </p>
-        <img src="images/1460407704_quote_reverse.png" class="img-quote-reverse">
+        <img src="<?php bloginfo('template_directory'); ?>/images/1460407704_quote.png" class="img-quote">
+        <div id="temoignages_content">
+          <?php $my_query = new WP_Query('category_name=Témoignages&showposts=1&orderby=rand');
+          while ($my_query->have_posts()) : $my_query->the_post();
+          $do_not_duplicate = $post->ID; ?>
+            <?php the_content(); ?>
+          <?php endwhile; ?>
+        </div>
+        <img src="<?php bloginfo('template_directory'); ?>/images/1460407704_quote_reverse.png" class="img-quote-reverse">
       </div>
 
       <!--Formulaire-->
       <div class="formulaire col-lg-offset-1 col-lg-4 col-md-offset-1 col-md-5 col-sm-12 col-xs-12">
-          <h2>Votre avis m'intéresse...</h2>
-          <?php echo do_shortcode( '[contact-form-7 id="254" title="Formulaire de témoignages"]' ); ?>
+          <h3>Votre témoignage m'intéresse...</h3>
+          <?php echo do_shortcode( '[contact-form-7 id="297" title="Formulaire de témoignages"]' ); ?>
       </div>
       
     </div>

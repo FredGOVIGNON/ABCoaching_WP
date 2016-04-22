@@ -10,13 +10,13 @@
 <div class="row index_section1">
   <div class="index_section1_texte">    
     <div id="Apprendre">
-    <a href="./formations.php">Apprendre</a>
+    <a href="<?php get_home_url() ?>wordpress/index.php/formations/">Apprendre</a>
     </div>
     <div id="Accompagner">
-    <a href="./coaching.php">Accompagner</a>
+    <a href="<?php get_home_url() ?>wordpress/index.php/coaching/">Accompagner</a>
     </div>
     <div id="Developper">
-    <a href="./ateliers.php">Développer</a>
+    <a href="<?php get_home_url() ?>wordpress/index.php/ateliers/">Développer</a>
     </div>
   </div>
   <div class="index_section1_photo">
@@ -47,24 +47,24 @@
 <div class="col-lg-offset-1 col-lg-10 col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10 col-xs-offset-1 col-xs-10">
   <div class="row">
     <div class="formation_photo col-lg-4 col-md-4 col-sm-12 col-xs-12">
-      <a href="./formations.php"> 
+      <a href="<?php get_home_url() ?>wordpress/index.php/formations/"> 
         <img src="<?php bloginfo('template_directory'); ?>/images/formation_test1.jpg" alt="" title="" class="img-responsive"> 
       </a>
       <h2>Formations</h2>
-      <p>Management d'équipe,</p>
-      <p>préparation à la retraite, etc.</p>
+      <p>Management d'équipe</p>
+      <p>Préparation à la retraite</p>
     </div>
     <div class="coaching_photo col-lg-4 col-md-4 col-sm-12 col-xs-12"> 
-      <a href="./coaching.php"> 
+      <a href="<?php get_home_url() ?>wordpress/index.php/coaching/"> 
         <img src="<?php bloginfo('template_directory'); ?>/images/coaching_test1.jpg" alt="" title="" class="img-responsive"> 
       </a> 
       <h2>Coaching</h2>
-      <p>Franchir un obstacle,</p>
-      <p>atteindre un objectif,</p>
-      <p>gagner du temps, etc.</p>
+      <p>Franchir un obstacle</p>
+      <p>Atteindre un objectif</p>
+      <p>Gagner du temps</p>
     </div>
     <div class="atelier_photo col-lg-4 col-md-4 col-sm-12 col-xs-12"> 
-      <a href="./ateliers.php"> 
+      <a href="<?php get_home_url() ?>wordpress/index.php/ateliers/"> 
         <img src="<?php bloginfo('template_directory'); ?>/images/ateliers_test1.jpg" alt="" title="" class="img-responsive"> 
       </a> 
       <h2>Ateliers</h2>

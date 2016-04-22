@@ -3,7 +3,10 @@
 		<li>
 			<h2>Archives</h2>
 			<ul>
-				<?php wp_get_archives('type=monthly'); ?>   
+				<?php $args = array(
+					'type'            => 'monthly'
+				);
+				wp_get_archives($args); ?>   
 			</ul>
 		</li>
 	</ul> 

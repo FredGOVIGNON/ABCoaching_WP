@@ -16,12 +16,16 @@
     <div class="contact_section2 col-lg-offset-1 col-lg-5 col-md-offset-1 col-md-5 col-sm-12 col-xs-12">
 
     <div class= "contact">
-      <h1><u>Contact</u></h1><br>
-      <p>41 Rue Robert Poisson<br>28130 SAINT PIAT<br>PARIS : Place d'Italie, Nationale<br><br>06 87 68 13 99<br><br>annie.bearez@wanadoo.fr</p><br><br>
+      <?php if(have_posts()) : ?>
+        <?php while(have_posts()) : the_post(); ?> 
+          <?php the_content(); ?> 
+        <?php endwhile; ?> 
+      <?php endif; ?> 
     </div>
 
+
     <div class="sncf">
-      <img src="./images/train-logo-icon-68833.png" alt="Horaires de train">
+      <img src="<?php bloginfo('template_directory'); ?>/images/train-logo-icon-68833.png" alt="Horaires de train">
       <a href="http://www.voyages-sncf.com/billet-train/horaires">Pour consulter les horaires de train</a>
     </div>
     
@@ -36,7 +40,7 @@
     <!--Formulaire-->
     <div class="formulaire col-lg-offset-1 col-lg-4 col-lg-offset-1 col-md-offset-1 col-md-4 col-md-offset-1 col-sm-10 col-xs-10">
       <h3>Formulaire de contact</h3>
-			<?php echo do_shortcode( '[contact-form-7 id="256" title="Formulaire de contact"]' ); ?>
+			<?php echo do_shortcode( '[contact-form-7 id="296" title="Formulaire de contact"]' ); ?>
     </div>
   </div>
 </div>

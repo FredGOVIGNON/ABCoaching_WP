@@ -1,4 +1,4 @@
-
+/*
 Theme Name: Annie Bearez Coaching WP
 Theme URI: ...
 Author: 3 élèves de la Wild Code School Chartres promo 1
@@ -17,7 +17,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 /*
  * Table of Contents
- *
+ 
  * 1.0 - Body
  * 2.0 - Header
  * 3.0 - Footer
@@ -33,7 +33,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * 13.0 - Qui-suis-je
  * 14.0 - Références
  * 15.0 - Témoignages
- * 16.0 - Formulaire de contact (pages témoignages et contact)
+ * 16.0 - Archive
+ * 17.0 - Page blog (single)
  */
 
 /*-------------------------------------------------*/
@@ -53,7 +54,7 @@ body {
 
 .navbar{
 	margin-bottom: 0px;
-	font-family: 'PT+Sans',Arial,sans-serif;
+	font-family: 'PT+Sans',Arial,sans-serif !important;
 }
 
 nav li{
@@ -74,8 +75,13 @@ nav li{
 	max-height: 475px;
 }
 
-@media screen and (max-width: 1040px){
-	.nav > li {
+.dropdown-menu{
+	min-width: 145px;
+}
+
+
+@media screen and (max-width: 1101px){
+	nav li {
 		padding: 0 1px 0 0;
 	}
 }
@@ -86,12 +92,18 @@ nav li{
 	}
 }
 
+@media screen and (min-width: 768px){
+	.navbar-header{
+		width:50px;
+	}
+}
+
 /*-------------------------------------------------*/
 
 /* 3.0 - Footer */
 
 .footer {
-  background-color: #bdbdbd;
+  background-color: #e7e7e7;
   padding: 15px 25px 8px 25px;
   color: black;
   font-family: 'PT+Sans',Arial,sans-serif;
@@ -109,15 +121,15 @@ nav li{
 
 .footer_right {
   text-align: right;
-}
-
-.footer_right .liens a {
-  text-decoration: none;
   font-color: black;
 }
 
-.menu-footer {
-	list-style-type:none;
+#menu-item-298{
+	list-style: none;
+}
+
+#menu-item-301{
+	list-style: none;
 }
 
 @media screen and (max-width: 800px){
@@ -133,6 +145,11 @@ nav li{
   }
   .footer_right {
     text-align: center;
+    margin-left: -15px;
+  }
+    .footer_right p{
+    text-align: center;
+    margin-left: 35px;
   }
   .footer_middle img{
     margin-left: 0;
@@ -156,7 +173,7 @@ nav li{
 	z-index: -1;
 	width: 100%;
 	height: 100%;
-	background: url("./images/green-692079_ABC1.jpg") no-repeat center center fixed;
+	background: url("./images/image_modif.jpg") no-repeat center center fixed;
 	-webkit-background-size:cover;
 		moz-background-size:cover;
 		  o-background-size:cover;
@@ -167,9 +184,13 @@ nav li{
 	font-size: 220%;
 }
 
+.index_section1_texte a{
+	color: white !important;
+}
+
 .index_section1_texte div{
 	position:absolute;
-	background: rgba(131,208,201,0.4);
+	background: #59A1DC;
   padding:10px;
 }
 
@@ -192,8 +213,8 @@ nav li{
 /* Page principale - Section2 */
 
 .index_section2_presentation{
-	background-color: #83d0c9;
-	color: #FFFFFF;
+	background-color: #59A1DC;
+	color: white;
 }
 
 .index_section2_presentation .bloc_photo{
@@ -264,9 +285,14 @@ nav li{
 	position: relative;
 	padding: 30px;
 	color: #FFFFFF;
-	background-color: #83d0c9;
+	background-color: #59A1DC;
 	min-height: 350px;
 }
+
+.index_section4_blog a{
+	color:#23527c;
+}
+
 
 .index_section4_blog .citation{
 	font-size: 35px;
@@ -286,7 +312,7 @@ nav li{
   height:10px;
   border-width: 3px;
   border-style: solid none none solid;
-  border-color: #FFFFFF;
+  border-color: white;
 }
 
 .index_section4_blog .blog1 .c-frame-br {
@@ -297,7 +323,7 @@ nav li{
   height:10px;
   border-width: 3px;
   border-style: none solid solid none;
-  border-color: #FFFFFF;
+  border-color: white;
 }
 
 @media screen and (max-width: 1000px) {
@@ -312,25 +338,23 @@ nav li{
 /*5.0 - Ateliers*/
 
 /* Ateliers - Section1 */
+.ateliers_section1_photo{
+	width: 100%;
+	height: 15em;
+	color: #19B5FE;
+	background: url("./images/people-woman-coffee-meeting.jpg") no-repeat center center;
+	-webkit-background-size:cover;
+		moz-background-size:cover;
+		  o-background-size:cover;
+			background-size:cover;
+	margin: 0;
+}
+
+
+/* Ateliers - Section1 texte */
 .ateliers_section1_texte{
-	margin-top: 100px;
-  text-align: left;
-  margin-bottom: 50px;
-}
-
-.ateliers_section1_texte h1{
-	font-weight: 600;
-}
-
-/* Ateliers - Section2 */
-.ateliers_section2_photo {
-	height: 100%;
-	padding-left: 30px;
-}
-
-.ateliers_section2_photo img{
-	width: 90%;
-	padding-top: 190px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 /* Ateliers - Section3 */
@@ -379,41 +403,19 @@ nav li{
   margin: 20px 10px 35px 10px;
 }
 
-.blog_section2_post #content{
-  padding:10px;
-  margin-top:10px;
-}
-
-.blog_section2_post .blog_article{
-	box-shadow: 10px 10px 5px 0px #656565;
-	-moz-box-shadow: 10px 10px 5px 0px #656565;
-	-webkit-box-shadow: 10px 10px 5px 0px #656565;
-	-o-box-shadow: 10px 10px 5px 0px #656565;
-	filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, Strength=5);
-	border-radius: 10px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-}
-
 /* Blog - Section3 sidebar */
 .blog_section3_sidebar{
-  margin: 40px 10px 10px 50px;
+  margin: 40px 10px 40px 50px;
+  background-color: #e7e7e7;
 }
 
-.blog_section3_sidebar .bloc_sidebar{
-  width: auto;
-  margin: 5px;
-  border: 1px solid #656565;
-  border-radius: 10px;
+.blog_section3_sidebar .sidebar ul{
+	padding:0;
 }
 
-.blog_section3_sidebar .bloc_sidebar ul>li{
-  list-style-type: circle;
-  color: #1BBC9B;
-}
-
-.blog_section3_sidebar h3{
-  color: #1BBC9B;
+.blog_section3_sidebar .sidebar li{
+	list-style-type: none;
+	text-align: center;
 }
 
 @media screen and (max-width: 993px){
@@ -481,6 +483,10 @@ nav li{
 	font-size: 33px;
 }
 
+.row .contact_section2 .sncf{
+	padding-bottom: 10px;
+}
+
 .row .contact_section2 .sncf img{
 	width: 40px;
 }
@@ -504,6 +510,10 @@ nav li{
 }
 
 /* Contact - Section3 */
+
+.section3_formulaire{
+	padding-top:60px;
+}
 
 .section3_formulaire .wpcf7-form-control{
 	display: block;
@@ -577,7 +587,22 @@ nav li{
 	}
 	.section3_formulaire .formulaire{
 		padding-top: 250px;
-		margin: 60px 60px 0px 60px;
+		margin: 60px 60px 30px 40px;
+	}
+}
+}
+
+@media screen and (max-width: 800px){
+		.section3_formulaire .formulaire{
+		padding-top: 170px;
+		margin: 60px 60px 30px 40px;
+	}
+}
+
+@media screen and (max-width: 600px){
+		.section3_formulaire .formulaire{
+		padding-top: 60px;
+		margin: 60px 60px 30px 40px;
 	}
 }
 
@@ -590,7 +615,7 @@ nav li{
 
 .formations_section1_texte{
 	margin-top: 100px;
-  text-align: left;
+  /*text-align: left;*/
   margin-bottom: 100px;
 }
 
@@ -609,6 +634,12 @@ nav li{
 	padding-top: 350px;
 	padding-left: 25px;
 	-webkit-border-radius: 100px;
+}
+
+.prestations-wp {
+		text-align: center;
+		margin-top: 50px;
+		margin-bottom: 50px;
 }
 
 /*-------------------------------------------------*/
@@ -640,9 +671,6 @@ nav li{
 	font-size: 30px;
 }
 
-.liens_section2 .titre_page_liens{
-	font-size: 16px;
-}
 
 /*-------------------------------------------------*/
 
@@ -650,13 +678,8 @@ nav li{
 
 /* Mentions légales */
 
-.mentions_legales_titre{
-	text-align: center;
-	margin: 120px 50px 50px 50px;
-}
-
 .mentions_legales_texte{
-	margin: 20px 50px 120px 50px;
+	margin: 120px 50px 120px 50px;
 }
 
 /*-------------------------------------------------*/
@@ -705,19 +728,26 @@ nav li{
 			background-size:cover;
 }
 
-/* QSJ - Section2 */
+/* QSJ - Section pages wp */
 
-/*.qui_suis_je_section2{
-	/*margin: 50px;*/
-	/*color:#black;
+.titre{
+	margin: 50px 0 50px 0;
 }
 
-.qui_suis_je_section2 img{
-	padding-top: 100px;
-	padding-bottom: 30px;
-	width: 30%;
-	height:30%; 
-}*/
+.qui-suis-je .droite{
+	margin-right:10px;
+	margin-bottom: 80px;
+}
+
+.wp-image-266{
+	border-radius:4px;
+}
+
+@media screen and (max-width: 993px) {
+	.qui-suis-je .droite{
+		margin: 70px;
+	}
+}
 
 /*-------------------------------------------------*/
 
@@ -729,12 +759,12 @@ nav li{
 	width:100%;
 	height:15em;
 	color:#19B5FE;
-	background: url("./images/stones-801756_1920.jpg") no-repeat center center;
+	background: url("./images/stones-167089_1920.jpg") no-repeat center center;
 	-webkit-background-size:cover;
 		moz-background-size:cover;
 		o-background-size:cover;
 		background-size:cover;
-}
+} 
 
 /* References - section 2 */
 
@@ -860,7 +890,10 @@ nav li{
 	font-size: 24px;
 	margin-top: 10px;
 }
-
+.ecart {
+  margin-top:60px;
+	margin-bottom: 60px;
+}
 @media screen and (max-width: 1200px) {
 	.temoignages_section2{
 		margin: 20px;
@@ -936,4 +969,41 @@ ol.forms li.inline input { width: auto; }
 ol.forms li.inline label { display: inline; float: none; width: auto; }
 
 
-/*-------------------------------------------------
+/*-------------------------------------------------*/
+
+/*17.0 - Archive*/
+
+/* Archive - Section1 photo */
+.archive_section1_photo{
+	width:100%;
+	height:15em;
+	background: url("./images/flower.jpg") no-repeat center center;
+	-webkit-background-size:cover;
+	    moz-background-size:cover;
+	      o-background-size:cover;
+	        background-size:cover;
+}
+
+.archive{
+	padding: 50px;
+}
+
+/*-------------------------------------------------*/
+
+/*18.0 - Page blog (single)*/
+
+/* Archive - Section1 photo */
+.single_section1_photo{
+   width:100%;
+   height:15em;
+   background: url("./images/flower.jpg") no-repeat center center;
+   -webkit-background-size:cover;
+       moz-background-size:cover;
+         o-background-size:cover;
+           background-size:cover;
+}
+
+.page_blog .comments-template{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}

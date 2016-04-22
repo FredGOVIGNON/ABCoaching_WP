@@ -9,11 +9,7 @@
 		<p><img src= "<?php bloginfo('template_directory'); ?>/images/mail.png"> annie.bearez@wanadoo.fr</p>
 	</div>
 	<div class="footer_right col-xs-12 col-sm-4 col-md-4 col-lg-4">
-		<?php wp_nav_menu( array('theme_location' => 'menu-footer', 'menu_class' => 'menu-footer')); ?>
-				<!--
-		<p><a class="liens" href="./plan_du_site.php"> Plan du site </a></p>
-		<p><a class="liens" href="./mentions_legales.php"> Mentions légales</a> &copy;</p>
-		-->
+		<?php wp_nav_menu( array('theme_location' => 'menu-footer')); ?>
 		<p>SIRET : 385 293 758 00038</p>
 	</div>
 </div>

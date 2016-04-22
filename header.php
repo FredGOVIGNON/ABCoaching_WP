@@ -28,7 +28,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="./index.php">
+        <a class="navbar-brand" href="<?php get_home_url() ?>wordpress/index.php/accueil">
           <img alt="nautile" src="<?php bloginfo('template_directory'); ?>/images/petit_nautile_bleu.png" class="nautile">
         </a>
       </div>
