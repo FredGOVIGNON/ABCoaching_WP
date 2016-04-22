@@ -116,7 +116,7 @@ nav li{
 .footer_middle img {
   width:2em;
   margin-left: 15px;
-  margin-bottom: 1px;
+  margin-bottom: 3px;
 }
 
 .footer_right {
@@ -124,6 +124,14 @@ nav li{
   font-color: black;
 }
 
+.WCS p {
+font-size: 10px;
+
+}
+.WCS img {
+
+width: 3em;
+}
 #menu-item-298{
 	list-style: none;
 }

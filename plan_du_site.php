@@ -9,11 +9,19 @@
 
           <div class="plan_site">
             <h2><u>Plan du site</u></h2>
-            <ul>
+           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+    <div>
+    <?php the_content(); ?>
+    </div>
+  <?php endwhile; ?>
+  <?php endif; ?>
+
+
+           <!--  <ul>
               <li id="Accueil">
-              <a href="./index.php">"Accueil"</a></li>
+              <a href="<?php get_home_url() ?>wordpress/index.php/">"Accueil"</a></li>
               <li id="qui_suis-je">
-              <a href="./qui_suis_je">"Qui suis-je ?"</a></li>
+              <a href="<?php get_home_url() ?>wordpress/index.php./qui_suis_je/">"Qui suis-je ?"</a></li>
               <li id="mes_prestations">"Mes prestations"</li>
                 <div class="formations">
                 <li id="formations">
@@ -43,7 +51,7 @@
               <a href="./plandusite.php">"Plan du site"</a></li>
               <li id="mentions_legales">
               <a href="./mentionslegales.php">"Mentions légales"</a></li>
-            </ul>
+            </ul> -->
           </div>
 
 <?php get_footer();?>
