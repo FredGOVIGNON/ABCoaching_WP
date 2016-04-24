@@ -33,8 +33,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * 13.0 - Qui-suis-je
  * 14.0 - Références
  * 15.0 - Témoignages
- * 16.0 - Archive
- * 17.0 - Page blog (single)
+ * 16.0 - Formulaire de contact (pages témoignages et contact)
+ * 17.0 - Archive
+ * 18.0 - Page blog (single)
  */
 
 /*-------------------------------------------------*/
@@ -132,11 +133,11 @@ font-size: 10px;
 
 width: 3em;
 }
-#menu-item-298{
+#menu-item-260{
 	list-style: none;
 }
 
-#menu-item-301{
+#menu-item-261{
 	list-style: none;
 }
 
@@ -1015,3 +1016,5 @@ ol.forms li.inline label { display: inline; float: none; width: auto; }
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
+
+/*-------------------------------------------------*/
